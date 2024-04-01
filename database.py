@@ -5,13 +5,14 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="root",
   port =3306,
-  database = "nikkydb",
+  database = "nik",
+  # database = "nikkydb",
   password="Test1234!%"
 )
 print("n")
 mycursor = mydb.cursor()
 # mycursor.execute("select * from emp ")
-mycursor.execute("select * from loannikky ")
+mycursor.execute("select * from company1 ")
 results = mycursor .fetchall()
 
 # Print the results
